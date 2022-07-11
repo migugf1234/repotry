@@ -41,5 +41,5 @@ test_result=spark.sql("select * from testk2s")
 test_result.show(10)
 
 spark.sql("select count(*) from testk2s").show()
-test_result_small = spark.sql("select * from testk2s limit 5")
+test_result_small = spark.sql("select * from testk2s limit 10")
 test_result_small.show()
