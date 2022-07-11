@@ -30,7 +30,7 @@ df.printSchema()
 # Write the input data to memory
 query = df.writeStream.outputMode("append").format("memory").queryName("testk2s").option("partition.assignment.strategy", "range").start()
 
-query.awaitTermination(3000000)
+query.awaitTermination(30)
 
 query.stop()
 
