@@ -21,7 +21,7 @@ df = spark \
 .option("kafka.ssl.protocol", "TLSv1.2") \
 .option("kafka.ssl.enabled.protocols", "TLSv1.2") \
 .option("kafka.ssl.endpoint.identification.algorithm", "HTTPS") \
-.option("subscribe", "kafka-java-console-sample-topic") \
+.option("subscribe", "icp4ba-bai-testadp") \
 .load() \
 .selectExpr("CAST(key AS STRING)", "CAST(value AS STRING)")
 
